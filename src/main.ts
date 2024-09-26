@@ -15,6 +15,12 @@ const generateQR = async ({
   UPI_ID,
   AMOUNT,
 }: FunctionParams): Promise<string> => {
+  if (typeof AMOUNT !== "number")
+    throw new Error("Invalid amount type, expected number");
+  if (AMOUNT <= 0)
+    throw new Error("Invalid amount, expected amount more than 0");
+  if (AMOUNT >= 100000)
+    throw new Error("Inavlied amount, UPI Amount Limit is under 1L");
   const upiURL = `upi://pay?pa=${UPI_ID}&am=${AMOUNT}`;
   try {
     const qrCodeDataURL = await QRCode.toDataURL(upiURL);

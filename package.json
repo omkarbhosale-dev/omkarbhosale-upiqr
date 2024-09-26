@@ -1,6 +1,6 @@
 {
   "name": "@omkarbhosale/upiqr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This package helps to generate dynamic QR code using UPI ID to accept payment.",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
