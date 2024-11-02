@@ -1,3 +1,5 @@
+[Official Documentation](https://omkarbhosale-upiqr.vercel.app/)
+
 Install the package using the following command
 
 ```bash
