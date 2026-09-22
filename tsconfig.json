@@ -4,10 +4,12 @@
     "target": "ESNext",
     "outDir": "./dist",
     "moduleResolution": "Node",
+    "declaration": true,
+    "declarationMap": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true
   },
   "include": ["src"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist", "test"]
 }
